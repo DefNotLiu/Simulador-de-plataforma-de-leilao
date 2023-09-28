@@ -1,0 +1,46 @@
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/dbproj
+
+
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.19.0.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+INFO:logger:
+---------------------------------------------------------------
+API v1.0 online: http://localhost:8080/dbproj
+
+
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 778-288-285
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:53:31] "[33mPOST /dbproj/user/add HTTP/1.1[0m" 404 -
+INFO:logger:###              DEMO: PUT /dbproj/user              ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:54:14] "[31m[1mGET /dbproj/user HTTP/1.1[0m" 415 -
+INFO:logger:###              DEMO: GET /dbproj/notificacao/             ###
+DEBUG:logger:---- produto  ----
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:54:23] "GET /dbproj/notificacao/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: GET /proj/report/year           ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:54:26] "GET /proj/report/year HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /dbproj/user/            ###
+INFO:logger:---- new vendedor  ----
+DEBUG:logger:payload: {'user_name': 'Avó do Pedroso', 'password': 'Adoro o pedroso', 'email': 'pedrosao3000@gmail.com', 'nif': 39932929, 'morada': 'rua da mae do pedroso', 'admin': 3, 'token': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX25hbWUiOiJSaWNhcmRvIiwicGFzc3dvcmQiOiJyaWMzMDAwIn0.zZHGy2jx01LldoGcgx55hMxJ0UiqZLQuTTRsfW4Jw3A'}
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:54:38] "POST /dbproj/user/ HTTP/1.1" 200 -
+INFO:logger:###              DEMO: PUT /dbproj/user              ###
+INFO:logger:---- login user ----
+DEBUG:logger:payload: {'user_name': 'Joao', 'password': 'jonas3000'}
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:54:56] "PUT /dbproj/user HTTP/1.1" 200 -
+INFO:logger:###              DEMO: PUT /dbproj/user              ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:55:10] "[31m[1mGET /dbproj/user HTTP/1.1[0m" 415 -
+INFO:logger:###              DEMO: GET /proj/report/year           ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:55:27] "GET /proj/report/year HTTP/1.1" 200 -
+INFO:logger:###              DEMO: POST /dbproj/user/            ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:56:31] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+INFO:logger:###              DEMO: POST /dbproj/user/            ###
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 20:56:52] "[35m[1mPOST /dbproj/user/ HTTP/1.1[0m" 500 -
+ERROR:werkzeug:172.19.0.1 - - [27/Sep/2023 21:08:17] code 400, message Bad request syntax ('\x00\x00\x00\x08\x04Ò\x16/')
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 21:08:17] "[35m[1m\x00\x00\x00\x08\x04Ò\x16/[0m" HTTPStatus.BAD_REQUEST -
+ERROR:werkzeug:172.19.0.1 - - [27/Sep/2023 21:08:27] code 400, message Bad request syntax ('\x00\x00\x00\x08\x04Ò\x16/')
+INFO:werkzeug:172.19.0.1 - - [27/Sep/2023 21:08:27] "[35m[1m\x00\x00\x00\x08\x04Ò\x16/[0m" HTTPStatus.BAD_REQUEST -
